@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("pokemon_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 34px;
+}
+
+main {
+  padding: 10px;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.checkbox_containter {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.checkbox_containter label {
+  width: calc(100% / 6);
+}
+
+.checkbox_containter input{
+  background-color: antiquewhite;
+}
+
+
+label span {
+  display: inline-block;
+  padding-left: 8px;
+  
+}
+
+input {
+  padding: 10px;
+  border: none;
+}
+
+button {
+  padding: 4px;
+}
+
+section.pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 19%;
+  opacity: 1;
+  font-weight: bold;
+
+}
+
+.pokemon img {
+  width: 90%;
+}
+button {
+  padding: 10px;
+  width: 100px;
+  background: antiquewhite;
+  border: none;
+}
+
+
+@media (max-width: 720px) {
+
+  .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 33%;
+    opacity: 1;
+    font-weight: bold;
+  
+  }
+
+  
+  .checkbox_containter label {
+    width: calc(100% / 4);
+  }
+
+} 
+
+@media (max-width: 340px) {
+
+  .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 90%;
+    opacity: 1;
+    font-weight: bold;
+  
+  }
+
+  .checkbox_containter label {
+    width: calc(100% / 3);
+  }
+
+  .submit_form {
+    display: flex;
+    justify-content: center;
+  }
+} 
